@@ -1,50 +1,426 @@
-سياسة الخصوصية — تطبيق سواعد
-آخر تحديث: يونيو 2026
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سياسة الخصوصية — سواعد</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
 
-مقدمة
-نرحب بك في تطبيق سواعد، المنصة المخصصة لربط العملاء بالمهنيين في مجال الخدمات المنزلية. نلتزم بحماية خصوصيتك وأمان بياناتك الشخصية. تشرح هذه السياسة ما نجمعه وكيف نستخدمه وكيف نحميه.
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-باستخدامك للتطبيق فإنك توافق على هذه السياسة.
+    body {
+      font-family: 'Tajawal', 'Segoe UI', Arial, sans-serif;
+      background: #f0f4ff;
+      color: #1e293b;
+      line-height: 1.9;
+    }
 
-أولاً: البيانات التي نجمعها
-عند التسجيل واستخدام التطبيق نجمع:
+    /* ── Header ── */
+    .hero {
+      background: linear-gradient(135deg, #1a56db 0%, #1e40af 60%, #312e81 100%);
+      padding: 60px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      top: -200px; left: -100px;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      bottom: -100px; right: 80px;
+    }
+    .hero-icon {
+      width: 72px; height: 72px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 36px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .hero h1 {
+      font-size: 38px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+      position: relative;
+    }
+    .hero p {
+      color: rgba(255,255,255,0.75);
+      font-size: 15px;
+      position: relative;
+    }
+    .hero .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: #fff;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin-top: 14px;
+      backdrop-filter: blur(6px);
+    }
 
-بيانات الحساب: الاسم، رقم الجوال، البريد الإلكتروني، المدينة
-بيانات المهني: التخصص المهني، التقييمات، حالة الاشتراك
-بيانات الطلبات: تفاصيل الطلب، الموقع (المنطقة، المدينة، الحي)، التاريخ والوقت
-المحادثات: الرسائل المتبادلة بين العملاء والمهنيين داخل التطبيق
-الإشعارات: رمز الجهاز (FCM Token) لإيصال الإشعارات
-بيانات الاستخدام: تاريخ آخر تسجيل دخول، حالة الاتصال
-ثانياً: كيف نستخدم بياناتك
-تشغيل الحساب والتحقق من الهوية عند تسجيل الدخول
-ربط العملاء بالمهنيين المناسبين لتنفيذ طلباتهم
-إرسال إشعارات تتعلق بطلباتك ورسائلك وتقييماتك
-عرض الملف المهني والتقييمات لمساعدة العملاء على الاختيار
-تحسين أداء التطبيق وتجربة المستخدم
-ثالثاً: مشاركة البيانات
-نحن لا نبيع بياناتك لأي طرف ثالث. نشارك البيانات فقط في هذه الحالات:
+    /* ── Wave ── */
+    .wave {
+      display: block;
+      margin-top: -2px;
+      background: #f0f4ff;
+    }
 
-Firebase / Google: نستخدمها لتخزين البيانات والمصادقة وإرسال الإشعارات، وتخضع لسياسة خصوصية Google
-بين المستخدمين: يظهر اسمك وتخصصك وتقييمك للمستخدمين الآخرين بحسب طبيعة الخدمة
-المتطلبات القانونية: إذا طُلب ذلك بموجب القانون أو قرار قضائي
-رابعاً: حماية البيانات
-تُخزَّن البيانات على خوادم Firebase المشفّرة التابعة لـ Google
-كلمات المرور مشفّرة ولا يمكن لأحد الاطلاع عليها
-المحادثات محمية بحيث لا يطّلع عليها إلا طرفا المحادثة
-نطبّق قواعد أمان صارمة تمنع الوصول غير المصرح به
-خامساً: حقوقك
-الاطلاع: يمكنك مراجعة بياناتك من الملف الشخصي داخل التطبيق
-التعديل: يمكنك تعديل بياناتك في أي وقت من إعدادات الحساب
-الحذف: يمكنك حذف حسابك نهائياً من إعدادات التطبيق
-الإشعارات: يمكنك إيقافها في أي وقت من إعدادات جهازك
-سادساً: خصوصية الأطفال
-تطبيق سواعد مخصص للمستخدمين الذين تجاوزوا 18 سنة. لا نجمع بيانات من الأطفال دون قصد، وإذا اكتشفنا ذلك سيُحذف الحساب فوراً.
+    /* ── Content ── */
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
 
-سابعاً: التغييرات على هذه السياسة
-قد نُحدّث هذه السياسة من وقت لآخر. سنُعلمك بأي تغييرات جوهرية عبر إشعار داخل التطبيق. استمرارك في الاستخدام بعد التحديث يعني موافقتك على السياسة الجديدة.
+    /* intro card */
+    .intro-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 28px 32px;
+      margin-top: -20px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 24px rgba(26,86,219,0.08);
+      border-right: 5px solid #1a56db;
+      font-size: 15px;
+      color: #374151;
+      position: relative;
+      z-index: 1;
+    }
 
-ثامناً: التواصل معنا
-لأي استفسار أو طلب متعلق بخصوصيتك، تواصل معنا عبر:
+    /* section card */
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+      transition: box-shadow 0.2s;
+    }
+    .card:hover { box-shadow: 0 6px 28px rgba(26,86,219,0.1); }
 
-البريد الإلكتروني: 
-sawaedinfo1@gmail.com
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .card-icon {
+      width: 46px; height: 46px;
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+    .card-header h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1e293b;
+    }
+    .card-header span {
+      font-size: 13px;
+      color: #94a3b8;
+      display: block;
+      font-weight: 400;
+      margin-top: 1px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 9px 0;
+      border-bottom: 1px solid #f8fafc;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14.5px;
+      color: #374151;
+    }
+    ul li:last-child { border-bottom: none; }
+    ul li::before {
+      content: '✦';
+      color: #1a56db;
+      font-size: 10px;
+      margin-top: 5px;
+      flex-shrink: 0;
+    }
+    ul li strong { color: #1e293b; }
+
+    /* rights grid */
+    .rights-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .right-item {
+      background: #f8faff;
+      border-radius: 14px;
+      padding: 16px 18px;
+      border: 1px solid #e0e8ff;
+    }
+    .right-item .ri-icon { font-size: 24px; margin-bottom: 6px; }
+    .right-item h4 { font-size: 14px; font-weight: 700; color: #1e293b; }
+    .right-item p  { font-size: 13px; color: #64748b; margin-top: 2px; }
+
+    /* third-party chip */
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      color: #1a56db;
+      padding: 3px 12px;
+      border-radius: 20px;
+      font-size: 12.5px;
+      font-weight: 600;
+      margin-right: 6px;
+    }
+
+    /* contact box */
+    .contact-box {
+      background: linear-gradient(135deg, #eff6ff, #f0f9ff);
+      border: 1px solid #bfdbfe;
+      border-radius: 16px;
+      padding: 22px 26px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .contact-box .c-icon {
+      width: 50px; height: 50px;
+      background: #1a56db;
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+    .contact-box h4 { font-size: 15px; font-weight: 700; color: #1e293b; }
+    .contact-box a  { color: #1a56db; text-decoration: none; font-size: 14px; }
+
+    /* footer */
+    .footer {
+      text-align: center;
+      padding: 28px 0 0;
+      color: #94a3b8;
+      font-size: 13px;
+    }
+    .footer strong { color: #1a56db; }
+
+    /* colors per section */
+    .c1 { background: #eff6ff; } /* collect */
+    .c2 { background: #f0fdf4; } /* use */
+    .c3 { background: #fef9c3; } /* share */
+    .c4 { background: #fdf2f8; } /* protect */
+    .c5 { background: #f0fdf4; } /* rights */
+    .c6 { background: #fff7ed; } /* children */
+    .c7 { background: #f8fafc; } /* updates */
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-icon">🛡️</div>
+    <h1>سياسة الخصوصية</h1>
+    <p>تطبيق سواعد — منصة الخدمات المنزلية والمهنية</p>
+    <div class="badge">📅 آخر تحديث: يونيو 2026</div>
+  </div>
+
+  <svg class="wave" viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,40 C360,80 1080,0 1440,40 L1440,60 L0,60 Z" fill="#fff" opacity="0"/>
+    <path d="M0,60 L1440,60 L1440,30 C1080,60 360,10 0,50 Z" fill="#f0f4ff"/>
+  </svg>
+
+  <div class="container">
+
+    <!-- Intro -->
+    <div class="intro-card">
+      نرحب بك في تطبيق <strong>سواعد</strong>، المنصة المخصصة لربط العملاء بالمهنيين في مجال الخدمات المنزلية.
+      نلتزم بحماية خصوصيتك وأمان بياناتك الشخصية. تشرح هذه السياسة ما نجمعه وكيف نستخدمه وكيف نحميه.
+      <br/><br/>
+      <strong>باستخدامك للتطبيق فإنك توافق على هذه السياسة.</strong>
+    </div>
+
+    <!-- 1. Collect -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon c1">📋</div>
+        <div>
+          <h2>أولاً: البيانات التي نجمعها</h2>
+          <span>عند التسجيل واستخدام التطبيق</span>
+        </div>
+      </div>
+      <ul>
+        <li><strong>بيانات الحساب:</strong>&nbsp; الاسم، رقم الجوال، البريد الإلكتروني، المدينة</li>
+        <li><strong>بيانات المهني:</strong>&nbsp; التخصص المهني، التقييمات، حالة الاشتراك</li>
+        <li><strong>بيانات الطلبات:</strong>&nbsp; تفاصيل الطلب، الموقع (المنطقة، المدينة، الحي)، التاريخ والوقت</li>
+        <li><strong>المحادثات:</strong>&nbsp; الرسائل المتبادلة بين العملاء والمهنيين داخل التطبيق</li>
+        <li><strong>الإشعارات:</strong>&nbsp; رمز الجهاز (FCM Token) لإيصال الإشعارات</li>
+        <li><strong>بيانات الاستخدام:</strong>&nbsp; تاريخ آخر تسجيل دخول، حالة الاتصال</li>
+      </ul>
+    </div>
+
+    <!-- 2. Use -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon c2">⚙️</div>
+        <div>
+          <h2>ثانياً: كيف نستخدم بياناتك</h2>
+          <span>الأغراض التي تُستخدم فيها معلوماتك</span>
+        </div>
+      </div>
+      <ul>
+        <li>تشغيل الحساب والتحقق من الهوية عند تسجيل الدخول</li>
+        <li>ربط العملاء بالمهنيين المناسبين لتنفيذ طلباتهم</li>
+        <li>إرسال إشعارات تتعلق بطلباتك ورسائلك وتقييماتك</li>
+        <li>عرض الملف المهني والتقييمات لمساعدة العملاء على الاختيار</li>
+        <li>تحسين أداء التطبيق وتجربة المستخدم</li>
+      </ul>
+    </div>
+
+    <!-- 3. Share -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon c3">🤝</div>
+        <div>
+          <h2>ثالثاً: مشاركة البيانات</h2>
+          <span>نحن لا نبيع بياناتك لأي طرف ثالث</span>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <div>
+            <span class="chip">🔥 Firebase / Google</span>
+            نستخدمها لتخزين البيانات، المصادقة، وإرسال الإشعارات — وتخضع لسياسة خصوصية Google
+          </div>
+        </li>
+        <li><strong>بين المستخدمين:</strong>&nbsp; يظهر اسمك وتخصصك وتقييمك للمستخدمين الآخرين بحسب طبيعة الخدمة</li>
+        <li><strong>المتطلبات القانونية:</strong>&nbsp; إذا طُلب ذلك بموجب القانون أو قرار قضائي</li>
+      </ul>
+    </div>
+
+    <!-- 4. Protect -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon c4">🔒</div>
+        <div>
+          <h2>رابعاً: حماية البيانات</h2>
+          <span>كيف نحافظ على أمان معلوماتك</span>
+        </div>
+      </div>
+      <ul>
+        <li>تُخزَّن البيانات على خوادم Firebase المشفّرة التابعة لـ Google</li>
+        <li>كلمات المرور مشفّرة ولا يمكن لأحد الاطلاع عليها</li>
+        <li>المحادثات محمية بحيث لا يطّلع عليها إلا طرفا المحادثة</li>
+        <li>نطبّق قواعد أمان صارمة تمنع الوصول غير المصرح به</li>
+      </ul>
+    </div>
+
+    <!-- 5. Rights -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon c5">✅</div>
+        <div>
+          <h2>خامساً: حقوقك</h2>
+          <span>ما يمكنك فعله بخصوص بياناتك</span>
+        </div>
+      </div>
+      <div class="rights-grid">
+        <div class="right-item">
+          <div class="ri-icon">👁️</div>
+          <h4>الاطلاع</h4>
+          <p>مراجعة بياناتك من الملف الشخصي</p>
+        </div>
+        <div class="right-item">
+          <div class="ri-icon">✏️</div>
+          <h4>التعديل</h4>
+          <p>تعديل بياناتك من إعدادات الحساب</p>
+        </div>
+        <div class="right-item">
+          <div class="ri-icon">🗑️</div>
+          <h4>الحذف</h4>
+          <p>حذف حسابك نهائياً من الإعدادات</p>
+        </div>
+        <div class="right-item">
+          <div class="ri-icon">🔕</div>
+          <h4>الإشعارات</h4>
+          <p>إيقافها من إعدادات جهازك</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Children -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon c6">👶</div>
+        <div>
+          <h2>سادساً: خصوصية الأطفال</h2>
+          <span>التطبيق مخصص للبالغين فقط</span>
+        </div>
+      </div>
+      <p style="font-size:14.5px;color:#374151;">
+        تطبيق سواعد مخصص للمستخدمين الذين تجاوزوا <strong>18 سنة</strong>.
+        لا نجمع بيانات من الأطفال دون قصد، وإذا اكتشفنا ذلك سيُحذف الحساب فوراً.
+      </p>
+    </div>
+
+    <!-- 7. Updates -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon c7">🔄</div>
+        <div>
+          <h2>سابعاً: التغييرات على هذه السياسة</h2>
+          <span>كيف نُعلمك بالتحديثات</span>
+        </div>
+      </div>
+      <p style="font-size:14.5px;color:#374151;">
+        قد نُحدّث هذه السياسة من وقت لآخر. سنُعلمك بأي تغييرات جوهرية عبر إشعار داخل التطبيق.
+        استمرارك في الاستخدام بعد التحديث يعني موافقتك على السياسة الجديدة.
+      </p>
+    </div>
+
+    <!-- 8. Contact -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-icon" style="background:#eff6ff;">📬</div>
+        <div>
+          <h2>ثامناً: التواصل معنا</h2>
+          <span>لأي استفسار أو طلب متعلق بخصوصيتك</span>
+        </div>
+      </div>
+      <div class="contact-box">
+        <div class="c-icon">✉️</div>
+        <div>
+          <h4>فريق سواعد</h4>
+          <a href="mailto:sawaedinfo1@gmail.com">sawaedinfo1@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      جميع الحقوق محفوظة © 2026 — <strong>سواعد</strong>
+    </div>
+
+  </div>
+</body>
+</html>
